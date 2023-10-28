@@ -217,3 +217,4 @@ function carousel() {
     slide.style.transform = `translateX(-${slideCounter * 100}%)`;
   });
 }
+
