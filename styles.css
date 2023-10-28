@@ -47,7 +47,6 @@ img:not(.logo, .avatar-img) {
 body {
   font-family: var(--font-family);
   font-size: var(--font-size);
-  height: 300vh;
   background-color: var(--Light-grayish-blue);
 }
 
