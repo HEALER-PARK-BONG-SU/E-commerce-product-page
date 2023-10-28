@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="link-container">
+          <!-- logo -->
+          <img src="./images/icon-menu.svg" alt="" class="nav-open" />
+          <img src="./images/logo.svg" alt="" class="logo" />
+          <!-- links -->
+          <ul class="nav-links">
+            <i class="fas"></i>
+            <img
+              src="./images/icon-small-close.svg"
+              class="fa-times nav-close"
+              style="width: 20px"
+            />
+            <li class="list"><a href="#" class="link">Collection</a></li>
+            <li class="list"><a href="#" class="link">Men</a></li>
+            <li class="list"><a href="#" class="link">Women</a></li>
+            <li class="list"><a href="#" class="link">About</a></li>
+            <li class="list"><a href="#" class="link">Contact</a></li>
+          </ul>
+        </div>
+        <!-- profile -->
+        <div class="avatar">
+          <span class="cart-box">
+            <img src="./images/icon-cart.svg" class="cart" alt="cart" />
+            <span class="highlighted-orders"></span>
+            <span class="cart-item">
+              <p class="cart-heading">Cart</p>
+              <p class="empty">Your cart is empty</p>
+            </span>
+          </span>
+          <img
+            src="./images/image-avatar.png"
+            class="avatar-img"
+            alt="person"
+          />
+        </div>
+      </div>
+    </nav>
+    <div class="gap"></div>
+    <!-- main -->
+    <main>
+      <div class="grid">
+        <div class="lightbox">
+          <img
+            src="./images/image-product-1.jpg"
+            data-id="1"
+            class="main-img"
+          />
+          <div class="small-images">
+            <img
+              src="./images/image-product-1.jpg"
+              data-id="1"
+              class="img-l lightbox-img"
+            />
+            <img
+              src="./images/image-product-2.jpg"
+              data-id="2"
+              class="img-l lightbox-img"
+            />
+            <img
+              src="./images/image-product-3.jpg"
+              data-id="3"
+              class="img-l lightbox-img"
+            />
+            <img
+              src="./images/image-product-4.jpg"
+              data-id="4"
+              class="img-l lightbox-img"
+            />
+          </div>
+        </div>
+
+        <div class="slide-container">
+          <div class="slide">
+            <img src="./images/image-product-1.jpg" class="slide-img" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./images/image-product-2.jpg" class="slide-img" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./images/image-product-3.jpg" class="slide-img" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./images/image-product-4.jpg" class="slide-img" alt="" />
+          </div>
+          <button class="slider-prev-btn">
+            <img
+              src="./images/icon-previous.svg"
+              class="fa-chevron-left"
+              alt=""
+            />
+          </button>
+
+          <button class="slider-next-btn">
+            <img src="./images/icon-next.svg" class="fa-chevron-right" alt="" />
+          </button>
+        </div>
+
+        <div class="text-section">
+          <p class="company-name">sneaker company</p>
+          <h1 class="idea">Fall Limited Edition <br />Sneakers</h1>
+          <p class="desc">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+
+          <div class="price-sale-container">
+            <h3 class="price">$125.00</h3>
+            <span class="sale">50%</span>
+          </div>
+          <span class="old-price">$250.00</span>
+          <div class="mother-container">
+            <div class="counter">
+              <button class="btn decrease">
+                <img src="./images/icon-minus.svg" class="minus" />
+              </button>
+              <span class="amount">0</span>
+              <button class="btn increase">
+                <img src="./images/icon-plus.svg" class="plus" />
+              </button>
+            </div>
+            <button class="add-to-cart">
+              <img src="./images/white-cart.svg" alt="cart" />
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- lightbox-active -->
+      <div class="overlay">
+        <div class="light-box">
+          <button class="close-btn">
+            <img src="./images/icon-close.svg" class="fa-times" />
+          </button>
+          <button class="lightbox-btn prev-btn">
+            <img
+              src="./images/icon-previous.svg"
+              class="fa-chevron-left"
+              alt=""
+            />
+          </button>
+          <div class="img">
+            <img
+              src="./images/image-product-1.jpg"
+              style="border-radius: 7px"
+              data-id="1"
+              class="light-box-main-img"
+              alt=""
+            />
+            <div class="lightbox-img-container"></div>
+          </div>
+          <button class="lightbox-btn next-btn">
+            <!-- <i class="fas fa-chevron-right"></i> -->
+            <img src="./images/icon-next.svg" class="fa-chevron-right" alt="" />
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
