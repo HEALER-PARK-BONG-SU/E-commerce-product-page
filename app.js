@@ -159,6 +159,20 @@ cart.addEventListener('click', () => {
   cartContainer.classList.toggle('show-total-order');
 });
 
+window.addEventListener('click', (e) => {
+  if (!e.target.classList.contains('cart')) {
+    if (cartContainer.classList.contains('show-total-order')) {
+      cartContainer.classList.remove('show-total-order');
+    }
+  }
+});
+
+window.addEventListener('scroll', (e) => {
+  let scrollHeight = window.pageYOffset;
+  if (scrollHeight > 80) {
+    cartContainer.classList.remove('show-total-order');
+  }
+});
 // menu open close functionality
 const bars = getElement('.nav-open');
 const close = getElement('.nav-close');
