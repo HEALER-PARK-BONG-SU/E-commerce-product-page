@@ -47,7 +47,6 @@ img:not(.logo, .avatar-img) {
 body {
   font-family: var(--font-family);
   font-size: var(--font-size);
-  height: 300vh;
   background-color: var(--Light-grayish-blue);
 }
 
@@ -761,4 +760,15 @@ main {
     border: none;
     right: 0.5rem;
   }
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.attribution {
+  margin: 5rem auto 1rem auto;
 }

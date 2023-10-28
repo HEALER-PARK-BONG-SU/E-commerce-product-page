@@ -169,7 +169,7 @@ window.addEventListener('click', (e) => {
 
 window.addEventListener('scroll', (e) => {
   let scrollHeight = window.pageYOffset;
-  if (scrollHeight > 80) {
+  if (scrollHeight > 1) {
     cartContainer.classList.remove('show-total-order');
   }
 });
